@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" >
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumen de Alumno</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- etiqueta que referencia al archivo de estilos-->
 </head>
+
 <body>
-    <h1>Información de Alumno</h1>
+    <header>
+        <h1>Información de Alumno</h1>
+        <img src="mi-pic.jpg" alt="Foto D.Lafuente" width="300" height="300">
+        <!--etiqueta que muestra la imagen mi-pic con ancho u alto de 300 pixeles-->
+    </header>
+
+    <nav>
+        <!--la etiqueta "nav" se utiliza normalmente para incrustar liks de navegación-->
+        <a href="https://www.facebook.com/dlafuented">
+            <img src="facebook_logo_260x260.png"
+            alt="Facebook"
+            width="40" height="40">
+            <!--una imagen como link usanto la etiqueta "img" anidada en una etiqueta de enlace "a"-->
+        </a>
+    </nav>
+
     <main>
         <article>
             <h2>Datos Básicos</h2>
+            <ul>
+                <li><strong>Nombre:</strong> Daniel Lafuente</li>
+                <li><strong>Edad:</strong> 54 años</li>
+                <li><strong>Ciudad:</strong> Martinez</li>
+                <li><strong>País:</strong> Argentina</li>
+            </ul>
+            <!--la etiqueta "ul" es para definir listas desordenadas,
+             y "li" son los elementos de la lista-->
+        </article>
+
+        <article>
+            <h2>Intereses</h2>
+            <ul>
+                <li>Cocina</li>
+                <li>Ciencias Físicas</li>
+                <li>Historia Antigua</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Experiencias</h2>
+            <p><i>Me desenpeñé en los ultimos años en distintas areas de IT como ser Adminnistración de Redes y Comunicaciones, Administración de Firewalls, gestión de servicios de IT, gestion de soporte técnico, gestión de Proyectos IT</i></p>
+        </article>
+
+        <article>
+            <h2>Un video bonito</h2>
+            <video src="hd0205_preview.mp4" width="250" height="250" controls></video>
+            <!--la etiqueta "video" se utiliza para incrustar el video indicado en parametro src,
+            el paramametro controls adiciona controles de reproducción, ampliación etc en el mismo-->
         </article>
     </main>
+    <hr> <!-- "hr" inseeta una linea de separación tematica para separar el pie de pagina "footer"-->
+    <footer>
+        <p><cite>Lo que sabemos es una gota de agua; lo que ignoramos es el océano.</cite>
+            <a href="https://es.wikipedia.org/wiki/Isaac_Newton"> por Sir Isaac Newton (1642-1727).</a>
+        </p> <!-- establece una cita con una referencia (link "a") al personaje-->
+    </footer>
 </body>
+
 </html>

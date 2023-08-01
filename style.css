@@ -1,0 +1,24 @@
+/* aline el tecto en el centro y define color de fondo en las etiqueta header y nav*/
+header, nav {
+    text-align: center;
+    background-color: rgb(199, 133, 133);
+}
+/*para todo lo encuadrado en la etiqueta main define un margen de 0,
+un espacio alrrededor de 20 y el color de fondo*/
+main {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(201, 154, 154);
+}
+/*para todo lo encudrado en "article" que esté anidado en "main"
+se definen las propiedades indicadas*/
+main > article {
+    margin: 15px;
+    padding: 5px;
+    background-color: rgb(253, 237, 237);
+}
+/*para todo lo encuadrado en las etiquetas h2, ul, p, y video y
+que est´´en anidadas en article y estos a su vez en main define un margen de 5px*/
+main > article > h2, ul, p, video {
+    margin: 5px;
+}
