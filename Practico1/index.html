@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple</title>
+    <!--referencia de archivo de estilos-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <!--div para definir un contenedor en estilos css-->
+        <div class="container">
+            <div class="base">
+                    <h4>Calculadora Simple</h4>
+                <!--div para definir bloques y luego alinearlos con css-->
+                <div class="block">
+                    <input type="text" id="operando1" placeholder="operando 1">
+                </div>
+                <div class="block">
+                    <select id="opciones">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
+                </div>
+                <div class="block">
+                    <input type="text" id="operando2" placeholder="operando 2">
+                </div>
+            </div>
+            <div class="base">
+                <!--otro div para otro grupo de bloques-->
+                <div class="block2">
+                    <button type="button" onclick="Calcular()">calcular</button>
+                </div>
+                <div class="block2">
+                    <!--boton para borrar los los campos de entradas y salida-->
+                    <button type="button" onclick="Limpiar()">limpiar</button>
+                </div>
+            </div>
+            <p id="resultado"></p>
+        </div>
+    </main>
+    <!--referencia a archivo de script-->
+    <script src="./main.js"></script>
+</body>
+</html>
